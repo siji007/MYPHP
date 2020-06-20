@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Balsamiq+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Metal+Mania);
+
+/* .NavBar{
+
+} */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navItem {
+    font-family: Balsamiq Sans;
+}
+
+.circleBrand {
+    border-radius: 50%;
+    width: 52px;
+    height: 50px;
+    display: block;
+}
+
+.brand {
+    font-family: Lobster;
+}
+
+.introImage {
+    max-width: 100%;
+}
+
+@media screen and (max-width:660px) {
+    .nav-item {
+        font-family: Balsamiq Sans;
+        margin-left: 0px;
+    }
+}
