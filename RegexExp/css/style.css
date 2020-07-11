@@ -1,0 +1,19 @@
+input{
+  margin: auto;
+}
+.submit{
+  display: block;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.formContainer{
+    display: block;
+    top: 0;
+    margin: auto;
+    width: 500px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
