@@ -1,0 +1,21 @@
+.items{
+    width: 30%;
+}
+#profile{
+    
+    padding: 56.4px !important;
+}
+.fa{
+    font-size: 2rem;
+}
+.items:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}
+.home{
+    font-size: 18px;
+    font-family: inherit;
+}
