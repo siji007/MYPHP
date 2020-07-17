@@ -16,16 +16,16 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navItem navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class=" nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
+              <a class=" nav-link" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
               <a class="articles nav-link contact ml-3" href="articles.php">ATICLES</a>
             </li>
-            
+
             <li class="nav-item">
               <a class="contact nav-link contact ml-3" href="">CONTACT</a>
             </li>

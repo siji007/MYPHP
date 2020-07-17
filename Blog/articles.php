@@ -18,7 +18,7 @@
 <body class="" style="">
 
 
-    <!-- <?php include "./components/header.php"?> -->
+    <?php include "./components/header.php"?>
     <h1 class="articleHeader text-black ml-4">Articles</h1>
     <div class="container1 p-4">
         <div class="content">
@@ -26,11 +26,11 @@
                 <h2>How I started my programming journey</h2>
                 <div class="content-img-1">
                 <img src="img/codingJourney.png" class="h-31 w-4/5">
-            
+
                 </div>
-                <p>I guess i started this Programming  journey because i decided to study Computer science at the university
+                <p>I started this Programming  journey because i decided to study Computer science at the University
                 </p>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white px-2 font-bold rounded"><a style="text-decoration:none;" href="">Read More</a></button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white px-2 font-bold rounded"><a style="text-decoration:none;" href="articles/programmingJourney.php">Read More</a></button>
             </div>
         </div>
 
@@ -43,12 +43,12 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
                 <button class="bg-blue-500 px-2 rounded hover:bg-blue-700 font-bold text-white">Read More</button>
-                
+
             </div>
         </div>
 
         <div class="content">
-            
+
             <div class="content-text">
                 <img src="">
             </div>
@@ -70,12 +70,12 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
-                <button>Read More</button>
+                <button style="margin-bottom:20px;">Read More</button>
             </div>
         </div>
 
     </div>
-     <?php include "./components/footer.php"?> 
-    
+     <?php include "./components/footer.php"?>
+
 </body>
 </html>

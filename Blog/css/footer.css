@@ -1,10 +1,16 @@
 .footerBottom {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    margin: 1px solid red;
+    margin-top:10px;
 }
 
 h3 {
     text-align: center;
+}
+@media (prefers-reduced-motion: no-preference){
+  :root{
+    scroll-behavior: smooth;
+  }
 }

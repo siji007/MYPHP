@@ -10,27 +10,25 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 
     <title>Index</title>
 </head>
 <body class="mainBody" style="background-color:white;
-position:relative;
-padding-bottom:41px;
+
 min-height:100vh;
 ">
-
-
   <?php include "components/header.php" ?>
   <main style="min-height: 100%;
   width:100%;
   margin: 0 auto;">
-  
-  
+
+
   <div class="content-container m-4">
     <div class="row">
       <div class="intro col-lg-8 col-md-12 col-sm-12">
-      <h1 class="text-black">Hi, I'm Oluwasijibomi Olaifa.</h1>
-        <p class="mt-3">I'm a Backend developer and UI/UX Designer enthusiast.I am a student of university of Ilorin studying computer science
+      <h1 class="text-black headerIntro" style="font-family: 'Metal Mania', cursive;">Hi, I'm Oluwasijibomi Olaifa.</h1>
+        <p class="mt-3 intro">I'm a Backend developer and UI/UX Designer.I am a student of university of Ilorin studying computer science
           I am still learning PHP and hopefully move to Laravel when i am done with PHP.<br>
           You can read my latest article by clicking on the article button.
         </p>
@@ -47,6 +45,6 @@ min-height:100vh;
 <?php include "components/footer.php"?>
 
 
-    
+
 </body>
 </html>

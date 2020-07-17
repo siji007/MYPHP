@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 .articleHeader {
-    font-family: 'Metal Mania', cursive;
+    /* font-family: Lobster; */
     color: black;
     font-size: 70px;
 }
@@ -21,4 +21,9 @@
         grid-column-gap: 1em;
         grid-row-gap: 1em;
     }
+}
+@media (prefers-reduced-motion: no-preference){
+  :root{
+    scroll-behavior: smooth;
+  }
 }

@@ -10,6 +10,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 }
 
 .navItem {
-    font-family: Balsamiq Sans;
+    font-family: Lobster;
 }
 
 .circleBrand {
@@ -40,14 +41,21 @@ body {
 .brand {
     font-family: Lobster;
 }
-
+.intro{
+  font-family: Lobster;
+}
 .introImage {
     max-width: 100%;
 }
-
+@media (prefers-reduced-motion: no-preference){
+  :root{
+    scroll-behavior: smooth;
+  }
+}
 @media screen and (max-width:660px) {
-    .nav-item {
+    articles {
         font-family: Balsamiq Sans;
         margin-left: 0px;
+        left: 0px;
     }
 }
