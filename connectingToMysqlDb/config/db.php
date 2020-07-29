@@ -16,9 +16,10 @@
 $sql = mysqli_connect('localhost', 'therealsiji', 'developer','myphpblog');
 
 //Check Connection
-if(mysqli_connect_errno()){
-    echo 'Failed to connect to MYSQL '. mysqli_connect_errno();
+if(mysqli_connect_error()){
+    echo 'Failed to connect to MYSQL '. mysqli_connect_error();
 }
+
 ?>
 </body>
 </html>

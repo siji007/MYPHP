@@ -1,10 +1,10 @@
-<?php 
+<?php
 require('config/db.php');
 require('config/config.php');
 
 //check for delete
 if(isset($_POST['delete'])){
-  $delete_id  = mysqli_escape_string($sql,$_POST['delete']);
+  $delete_id  = mysqli_escape_string($sql, $_POST['delete_id']);
 
   $query = "DELETE FROM posts WHERE id = {$delete_id}";
 
@@ -16,16 +16,17 @@ if(isset($_POST['delete'])){
 }
 
 
-
-  // get ID 
-$id = mysqli_real_escape_string($sql,$_GET['id']); //Use to escape dangerous character or anything that is harmful
+  // get ID
+$id = mysqli_real_escape_string($sql, $_GET['id']); //Use to escape dangerous character or anything that is harmful
 
   //Create query
 
-$query = 'SELECT *FROM posts WHERE id = '.$id; //Here just trying to create a read more display
+$query = 'SELECT *  FROM posts WHERE id = '.$id; //Here just trying to create a read more display
 
+//Get Result
 $result = mysqli_query($sql, $query);
 
+// Fetch data
 $post = mysqli_fetch_assoc($result);
 
 //mysqli_fetch_assoc will basically take that one post  and turn it into an associative of array
@@ -56,12 +57,13 @@ mysqli_close($sql);
     <a href="<?php echo ROOT_URL ?>" class="btn btn-default">Back</a>
     <!-- The Read More Content -->
     <h1><?php echo $post['title'] ?></h1>
-    <small>Created on <?php echo $post['created_at']; ?> by 
+    <small>Created on <?php echo $post['created_at']; ?> by
     <?php echo $post['author']; ?>
     <p><?php echo $post['body']; ?></p>
     <hr>
 
     <form class="pull-right" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
     <input type="hidden" name="delete_id" value="<?php echo $post['id']; ?>">
 
     <input type="submit" class="btn btn-danger" name="delete" value="Delete">
