@@ -6,25 +6,25 @@
 
 } */
 
-html {
+/* html {
     height: 100%;
     margin: 0;
     padding: 0;
-}
+} */
 
-body {
+/* body {
     position: relative;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     height: 100%;
-}
+} */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 .navItem {
     font-family: Balsamiq Sans;
@@ -43,7 +43,7 @@ body {
 
 
 .car{
-  background-image: url(../img/red.JPG);
+  background-image: url(../img/black.jpg);
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;

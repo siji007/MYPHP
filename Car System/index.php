@@ -33,9 +33,9 @@
               <a class="contact nav-link contact ml-3" href="">CONTACT</a>
             </li>
           </ul> -->
-          <form class="form-inline my-2 my-lg-0 ml-auto" action="post">
+          <form class="form-inline my-2 my-lg-0 ml-auto" method="get" action="Display/RegisterResult.inc.php">
             <input class="form-control mr-sm-2" type="search" name="output" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit"><a href="">Search</a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search">Search</button>
           </form>
         </div>
       </nav>

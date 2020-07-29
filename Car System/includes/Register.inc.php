@@ -15,7 +15,7 @@ $carChassisNumber = $_POST['carChassis'];
 // $nameErr="";
 
 if(isset($_POST['myForm'])){
-  if(!preg_match("/^[a-zA-Z]\s*$/",$name)){
+  if(!preg_match("/^[a-zA-Z\s]*$/",$name)){
     header('Location: ../Register.php?nameerror');
     // $nameErr= "Name must contain only alphabets Only!";
   }
@@ -27,14 +27,14 @@ if(isset($_POST['myForm'])){
     header('Location: ../Register.php?carmodelerror');
     // $carModelErr = "Car Model must only Contain Alphabet!";
   }
-  else if(!preg_match("/^[0-9A-Z]*$/",$carPlate)){
+  else if(!preg_match("/^[0-9A-Z\-]*$/",$carPlate)){
     header('Location: ../Register.php?carplateerror');
     // $carPlate = "Color must only Contain Alphabet and Numbers!";
   }
   else{
     $pdo;
      $query = 'INSERT INTO users(Name,Next_Of_Kin,Phone_Number,Gender,Next_Of_Kin_Phone_Number,Car_Plate_Number,Car_Color,Car_Model,Car_Chassis_Number)
-     VALUES(:Name,:Next_Of_Kin,:Phone_Number,:Gender,:Next_Of_Kin_Phone_Number,:Car_Plate_Number,:Car_Color,:Car_Model,:Car_Chassis_Number)' ;
+     VALUES(:Name,:Next_Of_Kin,:Phone_Number,:Gender,:Next_Of_Kin_Phone_Number,:Car_Plate_Number,:Car_Color,:Car_Model,:Car_Chassis_Number)';
 
      $stmt = $pdo->prepare($query);
      // $stmt->execute(['Name' => $name,'Next_of_Kin'=>$NextofKin,'Phone_Number'=>$phoneNumber,'Gender'=>$gender,'Next_of_kin phone_number'=>$nextKinNo,'Car_Plate_Number'=>$carPlate,'Car color'=>$carColor,'Car Model'=>$carModel,'Car_chassis_number'=>$carChassisNumber]);
@@ -60,9 +60,7 @@ if(isset($_POST['myForm'])){
        echo "Done";
      }
      //Print error if something goes wrong
-     printf("Error: %");
+    //  printf("Error: %");
   }
-
 }
-
 ?>
